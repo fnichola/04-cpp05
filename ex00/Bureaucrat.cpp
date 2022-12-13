@@ -6,7 +6,7 @@
 /*   By: fnichola <fnichola@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 03:08:59 by fnichola          #+#    #+#             */
-/*   Updated: 2022/12/12 06:20:19 by fnichola         ###   ########.fr       */
+/*   Updated: 2022/12/13 01:58:35 by fnichola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,19 +49,12 @@ int Bureaucrat::getGrade() const
 
 void Bureaucrat::setGrade(const int newGrade)
 {
-	try
-	{
-		if (newGrade < m_gradeMax)
-			throw(Bureaucrat::GradeTooHighException());
-		else if (newGrade > m_gradeMin)
-			throw(Bureaucrat::GradeTooLowException());
-		else
-			m_grade = newGrade;
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << "[Exception!] " << e.what() << '\n';
-	}
+	if (newGrade < m_gradeMax)
+		throw(Bureaucrat::GradeTooHighException());
+	else if (newGrade > m_gradeMin)
+		throw(Bureaucrat::GradeTooLowException());
+	else
+		m_grade = newGrade;
 }
 
 void Bureaucrat::incrementGrade()
