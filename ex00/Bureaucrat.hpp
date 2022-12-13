@@ -6,12 +6,12 @@
 /*   By: fnichola <fnichola@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 05:16:30 by fnichola          #+#    #+#             */
-/*   Updated: 2022/12/12 05:46:58 by fnichola         ###   ########.fr       */
+/*   Updated: 2022/12/13 02:02:30 by fnichola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef BUREAUCRAT_HPP
+# define BUREAUCRAT_HPP
 
 #include <string>
 #include <iostream>
