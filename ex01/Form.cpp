@@ -6,7 +6,7 @@
 /*   By: fnichola <fnichola@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 03:08:59 by fnichola          #+#    #+#             */
-/*   Updated: 2022/12/13 03:27:17 by fnichola         ###   ########.fr       */
+/*   Updated: 2022/12/13 05:15:51 by fnichola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Form::~Form()
 
 Form& Form::operator=(const Form& rhs)
 {
-	debugPrint("Form copy assignment operator called", BLU);
+	debugPrint("Form assignment operator called", BLU);
 	(void)rhs;
 	return *this;
 }

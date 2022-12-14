@@ -6,7 +6,7 @@
 /*   By: fnichola <fnichola@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 01:47:40 by fnichola          #+#    #+#             */
-/*   Updated: 2022/12/13 03:31:04 by fnichola         ###   ########.fr       */
+/*   Updated: 2022/12/13 05:15:31 by fnichola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,5 @@ int main()
 	debugPrint("Form f2 = f;");
 	Form f2 = f;
 	std::cout << f2 << std::endl;
-
 return 0;
 }
