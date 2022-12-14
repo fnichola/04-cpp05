@@ -6,7 +6,7 @@
 /*   By: fnichola <fnichola@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 03:08:59 by fnichola          #+#    #+#             */
-/*   Updated: 2022/12/13 05:54:55 by fnichola         ###   ########.fr       */
+/*   Updated: 2022/12/14 03:41:33 by fnichola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,17 @@ void Bureaucrat::signForm(AForm& form)
 
 void Bureaucrat::executeForm(AForm const& form)
 {
-	form.execute(*this);
+	try
+	{
+		form.execute(*this);
+		std::cout << m_name + " executed " + form.getName() << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << "Couldn't execute form because " << e.what() << std::endl;
+	}
+	
+
 }
 
 std::string Bureaucrat::getName() const
